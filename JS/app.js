@@ -17,7 +17,7 @@ const mostrarHora= ()=>{
     let mes= (fecha.getMonth()+1);
     let anio = fecha.getFullYear();
     if(fechaLarga){
-        fechaActual.innerHTML=`${diaSemana}, ${dia} de ${meses[mes]} de ${anio}`
+        fechaActual.innerHTML=`${diaSemana}, ${dia} de ${meses[mes-1]} de ${anio}`
     }else{
         anio = (fecha.getFullYear()-2000);
         fechaActual.innerHTML = `${dia}/${mes}/${anio}`;
